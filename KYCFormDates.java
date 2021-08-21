@@ -26,6 +26,7 @@ class KYC
  				calendar.setTime(startDate);
  				//The form needs to be filled on +-30 days signup anniversary
 				calendar.add(Calendar.DATE, -30);
+				startDate=calendar.getTime();
 				//past the +-30 days then we are backdating it
 				calendar.add(Calendar.DATE, 60);
 				endDate=calendar.getTime();
